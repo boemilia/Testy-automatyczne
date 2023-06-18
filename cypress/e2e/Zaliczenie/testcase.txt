@@ -1,0 +1,76 @@
+TC 1
+
+Tytuł - Akceptuj cookie pop up
+Warunki początkowe - dostęp do internetu
+Krok/Rezultat 
+1. Otwórz stronę https://pasi-konik.pl/ - /Strona otwiera się prawidłowo
+2. Wciskasz przysk Akceptuj komunikatu cookie. / Okienko komunikatu zamyka się, 
+nie jest widoczne.
+
+TC 2 
+
+Tytuł - Odrzucenie cookie pop up
+Warunki początkowe - dostęp do internetu
+Krok/Rezultat 
+1. Otwórz stronę https://pasi-konik.pl/ - /Strona otwiera się prawidłowo
+2. Wciskasz przysk Odrzuć komunikatu cookie. / Okienko komunikatu zamyka się, 
+nie jest widoczne.
+
+TC 3
+
+Tytuł - Więcej informacji cookie pop up
+Warunki początkowe - dostęp do internetu
+Krok/Rezultat 
+1. Otwórz stronę https://pasi-konik.pl/ - /Strona otwiera się prawidłowo
+2. Wciskasz przysk Więcej informacji komunikatu cookie. / Okienko komunikatu zamyka się, 
+nie jest widoczne.
+
+TC 4
+
+Tytuł - Test opcji wyszukiwania na stronie
+Warunki początkowe - dostęp do internetu
+Krok/Rezultat 
+1. Otwórz stronę https://pasi-konik.pl/ - /Strona otwiera się prawidłowo
+2. Wciskasz ikonkę lupy na stronie. / Pojawia się pasek wyszukiwania do wpisania tekstu.
+
+TC 5 
+
+Tytuł - Test wyszukiwania po wciśnięciu przycisku enter
+Warunki początkowe - dostęp do internetu
+Krok/Rezultat 
+1. Otwórz stronę https://pasi-konik.pl/ - /Strona otwiera się prawidłowo
+2. Wciskasz ikonkę lupy na stronie. / Pojawia się pasek wyszukiwania do wpisania tekstu.
+3. Wpisujesz słowo 'kaski' i zatwierdzasz przyciskiem enter./ Przekierowuje do strony zawierającej wyszukane produkty.
+
+TC 6 
+Tytuł - Test wyszukiwania po podpowiedzi
+Warunki początkowe - dostęp do internetu
+Krok/Rezultat 
+1. Otwórz stronę https://pasi-konik.pl/ - /Strona otwiera się prawidłowo
+2. Wciskasz ikonkę lupy na stronie. / Pojawia się pasek wyszukiwania do wpisania tekstu.
+3. Wpisujesz słowo 'kaski' / Pojawia się rozwijana lista podpowiedzi.
+4. Klikasz 2 podpowiedź z kolei/ Przekiewuje do strony zawierającej wyszukane produkty.
+
+TC 7 
+
+Tytuł - Test przekierowania do podstrony Kontakt
+Warunki początkowe - dostęp do internetu
+Krok/Rezultat 
+1. Otwórz stronę https://pasi-konik.pl/ - /Strona otwiera się prawidłowo
+2. Wciskasz na pasku menu przycisk Sontaktuj się z nami. / Przekierowuje do strony z danymi kontaktowymi.
+
+TC 8 
+
+Tytuł - Test przekierowania do podstrony Utwórz konto
+Warunki początkowe - dostęp do internetu
+Krok/Rezultat 
+1. Otwórz stronę https://pasi-konik.pl/ - /Strona otwiera się prawidłowo
+2. Wciskasz na pasku menu przycisk Utwórz konto. / Przekierowuje do strony z formularzem do wypełnienia.
+
+TC 9
+
+Tytuł - Test przekierowania do podstrony Zaloguj się i logowania
+Warunki początkowe - dostęp do internetu
+Krok/Rezultat 
+1. Otwórz stronę https://pasi-konik.pl/ - /Strona otwiera się prawidłowo
+2. Wciskasz na pasku menu przycisk Zaloguj się. / Przekierowuje do strony logowania.
