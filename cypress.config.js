@@ -2,6 +2,13 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig ({
   projectId: '7dpgyq',
+  reporter: "mochawesome",
+  reporterOptions:{
+    "reportFilename": "[name]-report",
+    "overwrite": true,
+    "html": true,
+    "json": true
+  },
   e2e: {
     
     viewportHeight: 1080,

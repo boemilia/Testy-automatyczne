@@ -27,19 +27,31 @@ describe('Tests of cookie pop-up on site',()=>{
 describe('Tests of search on site',()=>{
     it('Get input',()=>{
         cy.get('#search_mini_form > div.field.search>label')
-    })
+})
 
     it('Search item with {enter}', () => {
         cy.get('#search').click();
         cy.get('#search').clear().type('kaski').type('{enter}');
         cy.url().should('contain', '?q=kaski');
-    })
+})
     it('Search on site with click on sugestion programability eq', () => {
-                cy.get('#search_mini_form').click();
-                cy.get('#search').clear().type('kaski').wait(2000);
-                cy.get('#qs-option-1').eq(0).click();
-                cy.url().should('contain','?q=+Kaski+czarne');
-            })
+        cy.get('#search_mini_form').click();
+        cy.get('#search').clear().type('kaski').wait(2000);
+        cy.get('#qs-option-1').eq(0).click();
+        cy.url().should('contain','?q=+Kaski+czarne');
+})
+        it('Search for invalid word', () => {
+        cy.get('#search').click();
+        cy.get('#search').clear().type('kljdsahajsA').type('{enter}');
+        cy.url().should('contain', '/catalogsearch/result/?q=kljdsahajsA'); 
+})
+        it('Search for wrong phrase and move to the hint', () => {
+        cy.get('#search').click();
+        cy.get('#search').clear().type('sciana').type('{enter}');
+        cy.url().should('contain', '/catalogsearch/result/?q=sciana'); 
+        cy.get('.block > :nth-child(2) > a').click();
+        cy.url().should('contain','/catalogsearch/result/?q=siana');
+}) 
 })
 
 describe('Test of tool bar redirections on site', ()=>{
@@ -48,7 +60,7 @@ describe('Test of tool bar redirections on site', ()=>{
         cy.url().should('contain','kontakt');
     })    
         it('Shows creating account page', ()=>{
-        cy.get('#idC8R13Rak').click();
+        cy.get('#idmwYxqqxp').click();
         cy.url().should('contain','/customer/account/create/');
     })
         it('Shows login page and log in', ()=>{
@@ -59,21 +71,18 @@ describe('Test of tool bar redirections on site', ()=>{
         cy.get('#send2').click();
         cy.url().should('contain','/customer/account/');
     })
-    it('Redirecting to Eskadron products, picking item properties and putting it into the basket', ()=>{
+    it('Redirecting to Eskadron products and picking item', ()=>{
         cy.get('#platinumblock > .owl-carousel > .owl-stage-outer > .owl-stage > :nth-child(1) > .item > a > img') .click();
         cy.url().should('contain','/kolekcje/wiosna-lato-2023/eskadron-pure');
         cy.get('#layer-product-list > div.products.wrapper.grid.columns4.products-grid > ol > li.item.product.product-item.nth-child-2np1.nth-child-3np1.nth-child-4np1.nth-child-5np1.nth-child-6np1.nth-child-7np1.nth-child-8np1 > div > div.product.details.product-item-details > strong > a').click();
         cy.url().should('contain','/eskadron-platinum-pure-czaprak-cotton-navy');
-        // cy.get('#attribute196').find('#attribute196 > option:nth-child(2)').click();
-        // cy.get('#attribute197').find('#attribute197 > option:nth-child(6)').click();
-        // cy.get('#product-addtocart-button').click();
-        // cy.url().should('contain','/eskadron-platinum-pure-czaprak-cotton-navy#');
+
+        
     })
+
 }) 
 
 
-    
 
-    
     
 

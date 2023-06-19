@@ -1,6 +1,6 @@
 TC 1
 
-Tytuł - Akceptuj cookie pop up
+Tytuł - Akceptuj cookie
 Warunki początkowe - dostęp do internetu
 Krok/Rezultat 
 1. Otwórz stronę https://pasi-konik.pl/ - /Strona otwiera się prawidłowo
@@ -9,7 +9,7 @@ nie jest widoczne.
 
 TC 2 
 
-Tytuł - Odrzucenie cookie pop up
+Tytuł - Odrzuć cookie
 Warunki początkowe - dostęp do internetu
 Krok/Rezultat 
 1. Otwórz stronę https://pasi-konik.pl/ - /Strona otwiera się prawidłowo
@@ -18,7 +18,7 @@ nie jest widoczne.
 
 TC 3
 
-Tytuł - Więcej informacji cookie pop up
+Tytuł - Więcej informacji o cookies
 Warunki początkowe - dostęp do internetu
 Krok/Rezultat 
 1. Otwórz stronę https://pasi-konik.pl/ - /Strona otwiera się prawidłowo
@@ -43,6 +43,7 @@ Krok/Rezultat
 3. Wpisujesz słowo 'kaski' i zatwierdzasz przyciskiem enter./ Przekierowuje do strony zawierającej wyszukane produkty.
 
 TC 6 
+
 Tytuł - Test wyszukiwania po podpowiedzi
 Warunki początkowe - dostęp do internetu
 Krok/Rezultat 
@@ -53,13 +54,36 @@ Krok/Rezultat
 
 TC 7 
 
+Tytuł - Test wyszukiwania po podpowiedzi
+Warunki początkowe - dostęp do internetu
+Krok/Rezultat 
+1. Otwórz stronę https://pasi-konik.pl/ - /Strona otwiera się prawidłowo
+2. Wciskasz ikonkę lupy na stronie. / Pojawia się pasek wyszukiwania do wpisania tekstu.
+3. Wpisujesz ciąg znaków 'kljdsahajsA' i klikasz enter./ Przekierowuje do strony na której widnieje komunikat "Brak wyników wyszukiwania".
+
+
+TC 8 
+
+Tytuł - Test wyszukiwania hasła którego nie ma na stronie.
+Warunki początkowe - dostęp do internetu
+Krok/Rezultat 
+1. Otwórz stronę https://pasi-konik.pl/ - /Strona otwiera się prawidłowo
+2. Wciskasz ikonkę 'sciana' i klikasz enter. /Przekierwouje do strony z komunikatem "Brak wyników wyszukiwania.
+Czy chodziło Ci o
+siana
+sina"
+4. Klikasz 1 podpowiedź z kolei./ Przekierowuje do strony zawierającej wyszukane produkty.
+
+
+TC 9 
+
 Tytuł - Test przekierowania do podstrony Kontakt
 Warunki początkowe - dostęp do internetu
 Krok/Rezultat 
 1. Otwórz stronę https://pasi-konik.pl/ - /Strona otwiera się prawidłowo
 2. Wciskasz na pasku menu przycisk Sontaktuj się z nami. / Przekierowuje do strony z danymi kontaktowymi.
 
-TC 8 
+TC 10 
 
 Tytuł - Test przekierowania do podstrony Utwórz konto
 Warunki początkowe - dostęp do internetu
@@ -67,10 +91,19 @@ Krok/Rezultat
 1. Otwórz stronę https://pasi-konik.pl/ - /Strona otwiera się prawidłowo
 2. Wciskasz na pasku menu przycisk Utwórz konto. / Przekierowuje do strony z formularzem do wypełnienia.
 
-TC 9
+TC 11
 
 Tytuł - Test przekierowania do podstrony Zaloguj się i logowania
 Warunki początkowe - dostęp do internetu
 Krok/Rezultat 
 1. Otwórz stronę https://pasi-konik.pl/ - /Strona otwiera się prawidłowo
 2. Wciskasz na pasku menu przycisk Zaloguj się. / Przekierowuje do strony logowania.
+
+TC 12 
+
+Tytuł - Test przekierowania z baneru i wybrania konkretnego produktu.
+Warunki początkowe - dostęp do internetu
+Krok/Rezultat 
+1. Otwórz stronę https://pasi-konik.pl/ - /Strona otwiera się prawidłowo
+2. Wciskasz reklamę z nazwą firmy Eskadron. / Przekierowuje do działu z produktami marki/
+3. Klikasz w pierwszy produkt./Pojawia się strona z opisem opcji produktu.
