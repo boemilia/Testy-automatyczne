@@ -98,6 +98,7 @@ Warunki początkowe - dostęp do internetu
 Krok/Rezultat 
 1. Otwórz stronę https://pasi-konik.pl/ - /Strona otwiera się prawidłowo
 2. Wciskasz na pasku menu przycisk Zaloguj się. / Przekierowuje do strony logowania.
+3. Wpisujesz podane hasło./Użytkownik zostaje zalogowany.
 
 TC 12 
 
