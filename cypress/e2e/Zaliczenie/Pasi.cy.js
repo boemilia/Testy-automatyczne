@@ -60,7 +60,7 @@ describe('Test of tool bar redirections on site', ()=>{
         cy.url().should('contain','kontakt');
     })    
         it('Shows creating account page', ()=>{
-        cy.get('#idmwYxqqxp').click();
+        cy.get('#html-body > div.page-wrapper > header > div.main-panel-top > div > div > div > div > ul > li:nth-child(5)').click();
         cy.url().should('contain','/customer/account/create/');
     })
         it('Shows login page and log in', ()=>{
